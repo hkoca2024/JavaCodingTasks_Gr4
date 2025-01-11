@@ -19,7 +19,7 @@ public class Task01_OddOrEven {
     /**
      * returns the given number if it is odd or even.
      *
-     * @param number
+     * @param number;
      */
 
     public static void identify(int number) {
