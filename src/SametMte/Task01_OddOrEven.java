@@ -17,5 +17,12 @@ public class Task01_OddOrEven {
      * returns the gıven number ıf ıt ıs odd or even
      * @param number
      */
-    public static void oddOrEven(int number) {}
+    public static void oddOrEven(int number) {
+        if (number % 2 == 0) {
+            System.out.println("Even");
+        }
+        else {
+            System.out.println("Odd");
+        }
+    }
 }
