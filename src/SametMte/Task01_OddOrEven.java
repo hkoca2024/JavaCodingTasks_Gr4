@@ -10,6 +10,9 @@ public class Task01_OddOrEven {
           identify(6) --> "Even"
  */
     public static void main(String[] args) {
+        oddOrEven(3);
+        oddOrEven(4);
+        oddOrEven(5);
 
     }
 
