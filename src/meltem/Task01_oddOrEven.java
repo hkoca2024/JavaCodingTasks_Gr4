@@ -10,6 +10,7 @@ public class Task01_oddOrEven {
              identify(6) --> "Even"
     */
     public static void main(String[] args) {
+        oddOrEven(8);
 
     }
     /**
@@ -17,6 +18,12 @@ public class Task01_oddOrEven {
      * @param number
      */
     public static void oddOrEven(int number){
+        if (number % 2 == 0){
+            System.out.println("Even");
+        }else {
+            System.out.println("Odd");
+        }
+
 
     }
 }
