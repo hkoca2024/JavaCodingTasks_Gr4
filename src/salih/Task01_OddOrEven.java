@@ -1,7 +1,5 @@
 package salih;
 
-import java.util.Scanner;
-
 public class Task01_OddOrEven {
 
     /*
@@ -15,6 +13,7 @@ public class Task01_OddOrEven {
 
     public static void main(String[] args) {
 
+        identify(5);
         identify(6);
 
     }
