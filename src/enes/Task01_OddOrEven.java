@@ -11,6 +11,9 @@ public class Task01_OddOrEven {
      */
     public static void main(String[] args) {
 
+        oddOrEven(5);
+        oddOrEven(6);
+
     }
 
     /**
@@ -19,6 +22,12 @@ public class Task01_OddOrEven {
      * @param number
      */
     public static void oddOrEven(int number) {
+
+        if(number % 2 != 0) {
+            System.out.println("Odd");
+        }else {
+            System.out.println("Even");
+        }
 
     }
 }
