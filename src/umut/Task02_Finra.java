@@ -15,7 +15,7 @@ public class Task02_Finra {
     }
 
     /**
-     *
+     * returns finra method for more look at above..
      * @param number
      */
 
