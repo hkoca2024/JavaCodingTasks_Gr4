@@ -8,7 +8,7 @@ public class FINRA {
 
     /**
      *
-     * @param num
+     * @param num is  must be int and its 3 ,5 and 15 divides will be found.
      */
 
     public static void finra(int num) {
@@ -16,7 +16,7 @@ public class FINRA {
 
 
             if (num % 15 == 0) { // 15 is multiple of 3 and 5 so written 15 .
-                System.out.println("hamit.FINRA");
+                System.out.println("FINRA");
             } else if (num % 3 == 0) {
                 System.out.println("FIN");
             } else if (num % 5 == 0) {
