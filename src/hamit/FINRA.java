@@ -1,4 +1,4 @@
-import java.sql.SQLOutput;
+package hamit;
 
 public class FINRA {
     public static void main(String[] args) {
@@ -8,7 +8,7 @@ public class FINRA {
 
     /**
      *
-     * @param num
+     * @param num is  must be int and its 3 ,5 and 15 divides will be found.
      */
 
     public static void finra(int num) {
