@@ -11,6 +11,7 @@ public class Task02_Finra {
     public static void main(String[] args) {
 
         finra(17);
+        finra(38);
 
     }
 
