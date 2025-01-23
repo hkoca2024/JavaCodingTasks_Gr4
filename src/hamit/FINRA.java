@@ -1,4 +1,4 @@
-import java.sql.SQLOutput;
+package hamit;
 
 public class FINRA {
     public static void main(String[] args) {
@@ -16,7 +16,7 @@ public class FINRA {
 
 
             if (num % 15 == 0) { // 15 is multiple of 3 and 5 so written 15 .
-                System.out.println("FINRA");
+                System.out.println("hamit.FINRA");
             } else if (num % 3 == 0) {
                 System.out.println("FIN");
             } else if (num % 5 == 0) {
