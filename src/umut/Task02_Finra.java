@@ -11,7 +11,9 @@ public class Task02_Finra {
     public static void main(String[] args) {
 
         finra(17);
+        finra(30);
         finra(38);
+        finra(-15);
 
     }
 
@@ -39,6 +41,7 @@ public class Task02_Finra {
                     System.out.print(i + " ");
 
             }
+            System.out.println(" ");
         } else {
             System.out.println("The number is out of bound, we can't run finra function");
 
