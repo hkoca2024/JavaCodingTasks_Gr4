@@ -7,7 +7,10 @@ public class Task01_oddOrEven {
        EX:
 
               identify(5) --> "Odd"
+
               // codes from Umut
+              // codes from Hamıt
+
               identify(6) --> "Even"
      */
     public static void main(String[] args) {
