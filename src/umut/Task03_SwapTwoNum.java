@@ -1,6 +1,6 @@
 package umut;
 
-public class Task3_SwapTwoNum {
+public class Task03_SwapTwoNum {
 
     public static void main(String[] args) {
 
