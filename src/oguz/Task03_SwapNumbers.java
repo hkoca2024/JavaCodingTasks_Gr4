@@ -1,6 +1,11 @@
 package oguz;
 
 public class Task03_SwapNumbers {
+
+    /*
+    Swap two integer variable values (including both ways; with using a third variable and without it)
+     */
+
     public static void main(String[] args) {
 
         int num1 = 10, num2 = 20;
@@ -10,9 +15,6 @@ public class Task03_SwapNumbers {
         swapWithTemp(num1, num2);
 
         swapWithoutTemp(num1, num2);
-
-
-
 
 
     }
