@@ -12,8 +12,11 @@ public class Task04_ReverseNegativeNumbers {
         System.out.println( "-"+ reverseNegativeNumbers(-35));
     }
 
+
     /**
-     * inverts the parameter
+     *
+     * @param i takes given value
+     * @return to the result
      */
     public static String reverseNegativeNumbers(int i) {
 
