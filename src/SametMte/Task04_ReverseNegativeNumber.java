@@ -24,7 +24,7 @@ public class Task04_ReverseNegativeNumber {
             String numberString = String.valueOf(number);
             String reversedString = "";
             for(int i=numberString.length()-1; i>=0; i--) {
-                reversedString = reversedString + numberString.charAt(i);
+                reversedString +=numberString.charAt(i);
             }
             int temp = -Integer.parseInt(reversedString);
             return temp;
