@@ -13,6 +13,7 @@ public class Task04_ReverseNegativeNums {
 
         //Aşağıda oluşturduğumuz metodu çağırıyoruz
         reverseNegativeNumber(num);
+
     }
 
 
@@ -29,7 +30,7 @@ public class Task04_ReverseNegativeNums {
             number = -number;
         }
 
-        // 2. Sayıyı Stringe dönüştür
+        // 2. Sayıyı StringBuilder içinde Stringe dönüştür
         StringBuilder strNumber = new StringBuilder(String.valueOf(number));
 
         // 3. Sayının (yani şuanki Stringin) yazılışını ters çevir
