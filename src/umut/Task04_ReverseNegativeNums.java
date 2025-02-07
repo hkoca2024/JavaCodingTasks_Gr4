@@ -25,6 +25,11 @@ public class Task04_ReverseNegativeNums {
 
     public static void reverseNegativeNumber(int number) {
 
+        // (Arkadaşlardan aldım) pozitif sayıda hata bildirsin
+        if (number >= 0) {
+            throw new IllegalArgumentException("Sayı negatif olmalıdır!!!");
+        }
+
         // 1. Alınan negatif sayıyı pozitif yap
         if (number < 0) {
             number = -number;
