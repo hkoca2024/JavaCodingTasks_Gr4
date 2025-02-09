@@ -6,15 +6,16 @@ public class FrequencyOfChars {
         String str="AAABBCCCCDDDEEE";
         System.out.println("the given str = "+str);
         System.out.println("frequencyOfChars(str) = " + frequencyOfChars(str));
+        /**
+         * this method count the frequency of each character and
+         *  return each character and frequency
+         *      *       side by side
+         * @param
+         */
 
     }
 
-    /**
-     * this method count the frequency of each character and
-     *  return each character and frequency
-     *      *       side by side
-     * @param
-     */
+
 
 
     public static String frequencyOfChars(String str) {
