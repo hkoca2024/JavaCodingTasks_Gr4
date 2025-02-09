@@ -4,18 +4,20 @@ public class FrequencyOfChars {
     public static void main(String[] args) {
 
         String str="AAABBCCCCDDDEEE";
+        System.out.println("the given str = "+str);
+        System.out.println("frequencyOfChars(str) = " + frequencyOfChars(str));
 
-        frequencyOfChars(str);
     }
 
     /**
-     *
-     * @param str this method count the frequency of each character and return each character and frequency
-     *       side by side
+     * this method count the frequency of each character and
+     *  return each character and frequency
+     *      *       side by side
+     * @param
      */
 
 
-    public static void frequencyOfChars(String str) {
+    public static String frequencyOfChars(String str) {
         StringBuilder newStr=new StringBuilder();
         //String newStr="";
         int count=1;
@@ -34,7 +36,6 @@ public class FrequencyOfChars {
             }
 
         }
-        System.out.println(str);//AAABBCCCCDDDEEE
-        System.out.println(newStr);// output A3B2C4D3E3
+               return newStr.toString();
     }
 }
