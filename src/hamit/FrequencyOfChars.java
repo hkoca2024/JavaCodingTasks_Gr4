@@ -5,7 +5,10 @@ public class FrequencyOfChars {
          Ex: frequencyOfChars("AAABBCDD") ==> A3B2C1D2*/
     public static void main(String[] args) {
 
+        hamıt
+        String str="AAABBCDDEE
         String str="AAABBCD2";
+         master
         System.out.println("the given str = "+str);
         System.out.println("frequencyOfChars(str) = " + frequencyOfChars(str));
 
@@ -39,6 +42,8 @@ public class FrequencyOfChars {
             }
 
         }
-               return newStr.toString();
+                if(newStr.toString().length()!=str.length()){ // to take single the last element
+                newStr.append(str.charAt(str.length()-1)).append("1");
+                         return newStr.toString();
     }
 }
