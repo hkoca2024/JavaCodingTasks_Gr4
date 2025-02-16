@@ -5,7 +5,7 @@ public class FrequencyOfChars {
          Ex: frequencyOfChars("AAABBCDD") ==> A3B2C1D2*/
     public static void main(String[] args) {
 
-        String str="AAABBCDDEEF";
+        String str="AAAGGGBBCDDEEFAAA";
         System.out.println("the given str = "+str);
         System.out.println("frequencyOfChars(str) = " + frequencyOfChars(str));
 
@@ -18,30 +18,29 @@ public class FrequencyOfChars {
      * @param
      */
     public static String frequencyOfChars(String str) {
-        StringBuilder newStr=new StringBuilder();
-        //String newStr="";
-        int count=1;
-        for (int i = 0; i <str.length()-1 ; i++) {// to avoid boundary problem it is used
-            if(str.charAt(i)==str.charAt(i+1)){  // str.length()-1 instead of str.length()
-                if(count==1){
-                    newStr.append(str.charAt(i));// at the  first we add character to string
-                }
-                count++;//  count  equals character
-                if(i==str.length()-2){
-                    newStr.append(count);//  when i  comes to the last element due to no changing
-                }                        //  java doesn't go else body and count is added here to string
-            }else{
-                if(count==1){
-                    newStr.append(str.charAt(i));
-                }
-                newStr.append(count);//  when equals character finish count is added to string
-                count=1;
-            }
-
+        if(str.isEmpty()){
+            throw new IllegalArgumentException("The given String can not be empty");
         }
-          if(newStr.toString().length()!=str.length()){ // to take single the last element
-              newStr.append(str.charAt(str.length()-1)).append("1");
-          }
-               return newStr.toString();
+        StringBuilder newStr=new StringBuilder();
+        while (!str.isEmpty()){
+            Character first=str.charAt(0);
+            String firstS=""+str.charAt(0);
+            int frequencyOfChar=frequency(first,str);
+            newStr.append(first).append(frequencyOfChar);
+            str=str.replaceAll(firstS,"").trim();
+        }
+           return newStr.toString();
+    }
+
+    public static int frequency(Character c,String str) {
+        int count=0;
+        for(Character each:str.toCharArray()){
+            if(each==c){
+                count++;
+            }
+        }
+
+
+        return count;
     }
 }
