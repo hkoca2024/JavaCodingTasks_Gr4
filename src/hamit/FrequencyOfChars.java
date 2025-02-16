@@ -5,42 +5,43 @@ public class FrequencyOfChars {
          Ex: frequencyOfChars("AAABBCDD") ==> A3B2C1D2*/
     public static void main(String[] args) {
 
-        String str = "AAABBBFFGGGAAAFFFEEAA";
-        System.out.println("the given str = " + str);
+        String str="AAABBCDDEEF";
+        System.out.println("the given str = "+str);
         System.out.println("frequencyOfChars(str) = " + frequencyOfChars(str));
 
 
     }
-
     /**
      * this method count the frequency of each character and
-     * return each character and frequency
-     * *       side by side
-     *
+     *  return each character and frequency
+     *      *       side by side
      * @param
      */
     public static String frequencyOfChars(String str) {
-        if(str.isEmpty()){
-            throw  new IllegalArgumentException("string can not be empty");
-        }
-        StringBuilder newStr = new StringBuilder();
-        while (!str.isEmpty()) {
-            Character first = str.charAt(0);
-            String firstChar = "" + str.charAt(0);
-            int count = frequency(first, str);
-            newStr.append(firstChar).append(count);
-            str=str.replaceAll(firstChar,"").trim();
-        }
-        return newStr.toString();
-    }
-
-    public static int frequency(Character c, String str) {
-        int count = 0;
-        for (Character each : str.toCharArray()) {
-            if (each == c) {
-                count++;
+        StringBuilder newStr=new StringBuilder();
+        //String newStr="";
+        int count=1;
+        for (int i = 0; i <str.length()-1 ; i++) {// to avoid boundary problem it is used
+            if(str.charAt(i)==str.charAt(i+1)){  // str.length()-1 instead of str.length()
+                if(count==1){
+                    newStr.append(str.charAt(i));// at the  first we add character to string
+                }
+                count++;//  count  equals character
+                if(i==str.length()-2){
+                    newStr.append(count);//  when i  comes to the last element due to no changing
+                }                        //  java doesn't go else body and count is added here to string
+            }else{
+                if(count==1){
+                    newStr.append(str.charAt(i));
+                }
+                newStr.append(count);//  when equals character finish count is added to string
+                count=1;
             }
+
         }
-        return count;
+          if(newStr.toString().length()!=str.length()){ // to take single the last element
+              newStr.append(str.charAt(str.length()-1)).append("1");
+          }
+               return newStr.toString();
     }
 }
