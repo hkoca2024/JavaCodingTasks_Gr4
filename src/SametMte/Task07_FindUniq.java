@@ -5,6 +5,10 @@ import java.util.Arrays;
 import java.util.List;
 
 public class Task07_FindUniq {
+    /*
+    Write a return method that can find the unique characters from the string
+    Ex: unique("AAABBBCCCDEF) ==> "DEF
+     */
     public static void main(String[] args) {
         String str="AAABBBCCCDEF";
         String result = findUniq(str);
