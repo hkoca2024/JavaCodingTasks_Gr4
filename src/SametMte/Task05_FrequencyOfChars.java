@@ -22,8 +22,7 @@ public class Task05_FrequencyOfChars {
 
         //harflerde bir dizi oluşturduk.
         String[] givenStringChar = givenString.split("");
-        List<String> givenStringList=new ArrayList<>();
-        givenStringList.addAll(Arrays.asList(givenStringChar));
+        List<String> givenStringList = new ArrayList<>(Arrays.asList(givenStringChar));
         System.out.println(givenStringList);
 
         //uniq bir karakterden oluşan bir dizi yaptık.
