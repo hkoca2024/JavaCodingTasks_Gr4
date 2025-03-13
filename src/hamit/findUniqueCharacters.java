@@ -1,7 +1,10 @@
 package hamit;
 
+import java.util.Collections;
+import java.util.List;
+
 public class findUniqueCharacters {
-     /*Write a return method that can find the unique number  of characters
+     /*Write a return method that can find the unique character   of the given String
          Ex: frequencyOfChars("ABBCDD") ==>AC */
 
 
@@ -11,6 +14,8 @@ public class findUniqueCharacters {
         String str = "AAAGBBCDDET";//GCET
         System.out.println("the given str = " + str);
         System.out.println("frequencyOfChars(str) = " + find_UniqueCharacters(str));
+        System.out.println("find_UniqueCharacters2(str) = " + find_UniqueCharacters2(str));
+
     }
 
     /**
@@ -54,6 +59,23 @@ public class findUniqueCharacters {
 
 
         return count;
+    }
+
+    /**
+     *
+     * @param str
+     * @return the unique characters of a String
+     */
+    public static String find_UniqueCharacters2(String str){
+        List<String> str2= List.of(str.split(""));
+        String uniques=" ";
+        for(String each:str2){
+            int freq= Collections.frequency(str2,each);
+            if(freq==1) {
+                uniques += each;
+            }
+        }
+        return uniques;
     }
 }
 
