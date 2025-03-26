@@ -7,14 +7,14 @@ public class passwordValidation {
     public static void main(String[] args) {
         String str = "dfdggABB.1";
 
-        passwordCheck(str);
+        System.out.println("passwordCheck(str) = " + passwordCheck(str));
     }
 
     /**
      * this method checks the given password whether it is valid or invalid password.
      * @param str is the given password as a string
      */
-    public static void passwordCheck(String str) {
+    public static boolean passwordCheck(String str) {
         int countSp = 0;
         int countCl = 0;
         int countLl = 0;
@@ -45,11 +45,8 @@ public class passwordValidation {
         }
 
 
-        if (countLl >= 1 && countDg >= 1 && countCl >= 1 && countSp >= 1) {
-            System.out.println("valid password");
-        } else {
-            System.out.println("invalid password");
-        }
+        return  (countLl >= 1 && countDg >= 1 && countCl >= 1 && countSp >= 1);
+
     }
 
 }
