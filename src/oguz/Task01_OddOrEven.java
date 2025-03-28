@@ -1,6 +1,7 @@
-package enes;
+package oguz;
 
 public class Task01_OddOrEven {
+
     /*
         Write a method that can identify  a given number is even or odd.
 
@@ -9,6 +10,8 @@ public class Task01_OddOrEven {
               identify(5) --> "Odd"
               identify(6) --> "Even"
      */
+
+
     public static void main(String[] args) {
 
         oddOrEven(5);
@@ -16,18 +19,22 @@ public class Task01_OddOrEven {
 
     }
 
+
+
     /**
-     * returns the given number if it is odd or even
-     *
-     * @param number
+     * This method checks whether the integer value sent as a parameter is odd or even.
+     * @param num
      */
-    public static void oddOrEven(int number) {
+   public static void oddOrEven(int num){
 
-        if(number % 2 != 0) {
-            System.out.println("Odd");
-        }else {
-            System.out.println("Even");
-        }
+        if (num%2==0)
+            System.out.println("The "+num+" is 'Even'");
+        else
+            System.out.println("The "+num+" is 'Odd'");
 
-    }
+
+   }
+
+
+
 }
