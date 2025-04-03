@@ -8,8 +8,8 @@ public class Task09_PasswordValidation {
     3.kriterler uyarsa true yoksa false dönsün
      */
     public static void main(String[] args) {
-        String password="Aa1@bc";
-        Boolean result=isValidPassword(password);
+        String password= "Aa1@bc";
+        Boolean result= isValidPassword(password);
         System.out.println(result);
 
     }
