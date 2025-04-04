@@ -22,6 +22,7 @@ public class Task09_PasswordValidation {
         boolean hasLowerCase = false;
         boolean hasDigit = false;
         boolean hasSpecialChar = false;
+
         String specialChars = "!@#$%^&*()-_=+{}[]|;:'\",.<>?/";
 
         //password inceleme
