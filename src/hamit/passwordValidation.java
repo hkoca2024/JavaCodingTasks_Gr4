@@ -5,7 +5,7 @@ package hamit;
 public class passwordValidation {
     //String .....password validation
     public static void main(String[] args) {
-        String str = "dfdggABB.1";
+        String str = "B.1cc";
 
         System.out.println("passwordCheck(str) = " + passwordCheck(str));
     }

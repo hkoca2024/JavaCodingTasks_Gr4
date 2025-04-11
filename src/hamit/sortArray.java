@@ -11,34 +11,35 @@ public class sortArray {
 
     public static void main(String[] args) {
         int [] arraygiven ={10,9,8,7};
-        Integer[] array=new Integer[arraygiven.length];
-        for (int i = 0; i < arraygiven.length ; i++) {
-            array [i]= arraygiven[i];
-        }
 
-        ArrayList<Integer> arrayList = new ArrayList<>(Arrays.asList(array));
-        System.out.println("sortArray(arrayList) = " + Arrays.toString(sort_array(arrayList)));
+
+
+        System.out.println("sortArray(arrayList) = " + Arrays.toString(sort_array(arraygiven)));
 
     }
 
     /**
      * this method takes ArrayList element and sort its elements in asc  then return as Integer []
-     * @param List List
+     * @param  numList
      * @return  Integer []
      */
-    public static Integer[] sort_array(ArrayList<Integer> List) {
-
-        Integer[] ascList = new Integer[List.size()];
+    public static int [] sort_array( int [] numList) {
+        ArrayList<Integer> list = new ArrayList<>();
+        for (int eachNumber : numList) {
+            list.add(eachNumber);
+        }
+        int [] ascList = new int [list.size()];
         int j = 0;
-        while (!List.isEmpty()) {
-            Integer min = List.get(0);
-            for (Integer each : List) {
+        while (!list.isEmpty()) {
+            int min = list.get(0);
+            for (Integer each : list) {
                 if (each < min) {
                     min = each;
                 }
             }
             ascList[j++] = min;
-            List.remove(min);
+            //System.out.println("Collections.min(List) = " + Collections.min(List));
+            list.remove((Integer) min);
 
         }
         return ascList;
